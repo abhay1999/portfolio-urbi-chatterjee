@@ -10,7 +10,7 @@ export const profile: Profile = {
   personalWebsite: "https://urbiism.wixsite.com/urbi1989",
   labWebsite: "https://cse.iitk.ac.in/users/urbic/research/",
   phone: "+91-9836931261",
-  profileImage: "/images/profile/urbi-chatterjee.jpg",
+  profileImage: "/images/profile/placeholder.svg", // Replace with urbi-chatterjee.jpg when adding profile photo
   tagline: "Hardware Security, Physically Unclonable Functions, Acoustic Side Channel Attacks",
   about:
     "I am an Assistant Professor in the Department of Computer Science and Engineering at IIT Kanpur. My research focuses on hardware security, physically unclonable functions (PUFs), acoustic side-channel attacks, approximate computing, and UAV security. I lead the Secure Embedded and Smart Things Laboratory (SETTLOR) at the C3I Center of IIT Kanpur.",
