@@ -1,0 +1,138 @@
+import type { Publication } from "@/types";
+
+export const journalPublications: Publication[] = [
+  {
+    authors: "Vishesh Mishra, Mahendra Rathor, Urbi Chatterjee",
+    title: "Dual-Mode Rounding Algorithms and Hardware for Posit-based DNN Training: The Future of Mixed Precision Frameworks",
+    venue: "ACM Transactions on Embedded Computing Systems",
+    year: "2025",
+  },
+  {
+    authors: "Vishesh Mishra, Dipesh, Sparsh Mittal, Urbi Chatterjee",
+    title: "SATGuard: SAT-driven Countermeasures for Protecting Approximate Circuits from Hardware Trojan",
+    venue: "ACM Transactions on Embedded Computing Systems",
+    year: "2025",
+    volume: "24(6)",
+    pages: "1-29",
+  },
+  {
+    authors: "Vishesh Mishra, Sparsh Mittal, Urbi Chatterjee",
+    title: "Novel Hybrid Probabilistic-Statistical Error Metrics for Approximate Adders",
+    venue: "Journal of Systems Architecture",
+    year: "2025",
+  },
+  {
+    authors: "Dipesh and Urbi Chatterjee",
+    title: "Door Knock: Reverse Engineering the MPSoC Layout through Timing Attack on NoC",
+    venue: "IEEE Embedded Systems Letters",
+    year: "2024",
+    volume: "16(4)",
+    pages: "449-452",
+    link: "https://doi.org/10.1109/LES.2024.3371106",
+  },
+  {
+    authors: "Vishesh Mishra, Sparsh Mittal, Neelofar Hassan, Rekha Singhal, Urbi Chatterjee",
+    title: "VADF: Versatile Approximate Data Formats for Energy-Efficient Computing",
+    venue: "ACM Transactions on Embedded Computing Systems",
+    year: "2023",
+    link: "https://dl.acm.org/doi/10.1145/3609106",
+  },
+  {
+    authors: "Oswa Amro, Vishesh Mishra, Rohit Negi, Urbi Chatterjee",
+    title: "CPU-Doctor: when a device's heartbeat can be an acoustic side-channel disassembler",
+    venue: "Journal of Cryptographic Engineering",
+    year: "2023",
+  },
+  {
+    authors: "K. Pratihar, U. Chatterjee, M. Alam, R. S. Chakraborty, D. Mukhopadhyay",
+    title: "Birds of the Same Feather Flock Together: A Dual-Mode Circuit Candidate for Strong PUF-TRNG Functionalities",
+    venue: "IEEE Transactions on Computers",
+    year: "2023",
+    volume: "72(6)",
+    pages: "1636-1651",
+  },
+  {
+    authors: "Urbi Chatterjee, Debdeep Mukhopadhyay, Rajat Subhra Chakraborty",
+    title: "3PAA: A Private PUF Protocol for Anonymous Authentication",
+    venue: "IEEE Transactions on Information Forensics & Security",
+    year: "2020",
+    volume: "16",
+    pages: "756-769",
+    link: "https://doi.org/10.1109/TIFS.2020.3021917",
+  },
+  {
+    authors: "Urbi Chatterjee, Vidya Govindan, Rajat Sadhukhan, Debdeep Mukhopadhyay, Rajat Subhra Chakraborty, Debashis Mahata, Mukesh Prabhu",
+    title: "Building PUF based Authentication and Key Exchange Protocol for IoT without Explicit CRPs in Verifier Database",
+    venue: "IEEE Transactions on Dependable and Secure Computing",
+    year: "2018",
+    volume: "16(3)",
+    pages: "424-437",
+    link: "https://doi.org/10.1109/TDSC.2018.2832201",
+  },
+  {
+    authors: "Urbi Chatterjee, Rajat Subhra Chakraborty, Debdeep Mukhopadhyay",
+    title: "A PUF-based Secure Communication Protocol for IoT",
+    venue: "ACM Transaction on Embedded Computing Systems",
+    year: "2017",
+    volume: "16(3)",
+    link: "https://doi.org/10.1145/3005715",
+  },
+];
+
+export const conferencePublications: Publication[] = [
+  {
+    authors: "Vishesh Mishra, Sparsh Mittal, Urbi Chatterjee",
+    title: "PowerShift: Leveraging Power-Aware Weight Approximations for Neural Network Acceleration",
+    venue: "International Conference on VLSI Design (VLSID)",
+    year: "2026",
+  },
+  {
+    authors: "Vishesh Mishra, Mahendra Rathor, Urbi Chatterjee",
+    title: "Dual-Mode Rounding Algorithms and Hardware for Posit-based DNN Training",
+    venue: "CODES+ISSS, ESWEEK",
+    year: "2025",
+  },
+  {
+    authors: "Vishesh Mishra, Marcello Traiola, Angeliki Kritikakou, Olivier Sentieys, Urbi Chatterjee",
+    title: "SERA-Float: A Soft Error Resilient Approximate Floating-Point Computing Format",
+    venue: "International Conference on Computer-Aided Design (ICCAD)",
+    year: "2025",
+  },
+  {
+    authors: "Dipesh, Urbi Chatterjee",
+    title: "N-Tracer: A Trace Driven Attack on NoC-Based MPSoC Architecture",
+    venue: "ACM ASIA CCS",
+    year: "2025",
+  },
+  {
+    authors: "Neelofar Hassan, Urbi Chatterjee",
+    title: "Machine Learning Attacks on Challenge-Response Obfuscations in Strong PUFs",
+    venue: "IEEE HOST",
+    year: "2024",
+  },
+  {
+    authors: "Navajit Singh Baban, Urbi Chatterjee, et al.",
+    title: "Biochip-PUF: Physically Unclonable Functions for Microfluidic Biochips",
+    venue: "International Test Conference (ITC)",
+    year: "2023",
+  },
+  {
+    authors: "Urbi Chatterjee, Rajat Sadhukhan, Debdeep Mukhopadhyay, Rajat Subhra Chakraborty",
+    title: "Stupify: A Hardware Countermeasure of KRACKs in WPA2 using Physically Unclonable Functions",
+    venue: "The Web Conference (WWW)",
+    year: "2020",
+    link: "https://dl.acm.org/doi/abs/10.1145/3366424.3383545",
+  },
+  {
+    authors: "Urbi Chatterjee, Durga Prasad Sahoo, Debdeep Mukhopadhyay, Rajat Subhra Chakraborty",
+    title: "Trustworthy Proofs for Sensor Data using FPGA based Physically Unclonable Functions",
+    venue: "Design Automation and Test in Europe (DATE)",
+    year: "2018",
+  },
+  {
+    authors: "Urbi Chatterjee, Rajat Subhra Chakraborty, Jimson Mathew, Dhiraj K. Pradhan",
+    title: "Memristor based Arbiter PUF: Cryptanalysis Threat and its Mitigation",
+    venue: "International Conference on VLSI Design (VLSID)",
+    year: "2016",
+  },
+];
