@@ -29,7 +29,8 @@ export function Contact({ contact }: { contact: Contact }) {
     {
       label: "Address",
       value: "Room No. KD-219, H.R. Kadim Diwan Building, Department of Computer Science and Engineering, IIT Kanpur-208016",
-      href: null,
+      href: "https://maps.google.com/?q=Department+of+Computer+Science+and+Engineering,+IIT+Kanpur,+Kanpur,+Uttar+Pradesh+208016",
+      external: true,
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
