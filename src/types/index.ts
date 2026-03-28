@@ -48,6 +48,9 @@ export interface Person {
   topic?: string;
   fellowship?: string;
   notes?: string;
+  image?: string;
+  website?: string;
+  email?: string;
 }
 
 export interface Publication {

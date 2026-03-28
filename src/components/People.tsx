@@ -54,11 +54,30 @@ export function People({ phdScholars, labInfo }: PeopleProps) {
               className="group rounded-2xl border border-gray-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-5"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${avatarGradients[i % avatarGradients.length]} flex items-center justify-center text-white font-bold text-sm shadow-sm flex-shrink-0`}>
-                  {getInitials(person.name)}
-                </div>
+                {person.image ? (
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                    className="w-11 h-11 rounded-xl object-cover shadow-sm flex-shrink-0"
+                  />
+                ) : (
+                  <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${avatarGradients[i % avatarGradients.length]} flex items-center justify-center text-white font-bold text-sm shadow-sm flex-shrink-0`}>
+                    {getInitials(person.name)}
+                  </div>
+                )}
                 <div className="min-w-0">
-                  <p className="font-semibold text-[#1a1a2e] leading-tight truncate">{person.name}</p>
+                  {person.website ? (
+                    <a
+                      href={person.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-[#1a1a2e] leading-tight truncate hover:text-indigo-600 transition-colors block"
+                    >
+                      {person.name}
+                    </a>
+                  ) : (
+                    <p className="font-semibold text-[#1a1a2e] leading-tight truncate">{person.name}</p>
+                  )}
                   {person.fellowship && (
                     <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full border mt-1 ${fellowshipColors[person.fellowship.split(" ")[0]] ?? "bg-gray-100 text-gray-600 border-gray-200"}`}>
                       {person.fellowship}
@@ -71,6 +90,14 @@ export function People({ phdScholars, labInfo }: PeopleProps) {
                 <p className="text-xs text-indigo-600 font-medium bg-indigo-50 px-2.5 py-1 rounded-lg">
                   {person.notes}
                 </p>
+              )}
+              {person.email && (
+                <a
+                  href={`mailto:${person.email}`}
+                  className="text-xs text-gray-400 hover:text-indigo-600 transition-colors mt-2 block"
+                >
+                  {person.email}
+                </a>
               )}
             </div>
           ))}
