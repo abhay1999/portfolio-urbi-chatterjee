@@ -47,21 +47,21 @@ export function People({ phdScholars, labInfo }: PeopleProps) {
 
         {/* PhD Scholars grid */}
         <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-5">PhD Scholars</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {phdScholars.map((person, i) => (
             <div
               key={i}
-              className="group rounded-2xl border border-gray-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-5"
+              className="group rounded-2xl border border-gray-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-6"
             >
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-4 mb-4">
                 {person.image ? (
                   <img
                     src={person.image}
                     alt={person.name}
-                    className="w-11 h-11 rounded-xl object-cover shadow-sm flex-shrink-0"
+                    className="w-16 h-16 rounded-xl object-cover shadow-sm flex-shrink-0"
                   />
                 ) : (
-                  <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${avatarGradients[i % avatarGradients.length]} flex items-center justify-center text-white font-bold text-sm shadow-sm flex-shrink-0`}>
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${avatarGradients[i % avatarGradients.length]} flex items-center justify-center text-white font-bold text-lg shadow-sm flex-shrink-0`}>
                     {getInitials(person.name)}
                   </div>
                 )}
@@ -85,9 +85,9 @@ export function People({ phdScholars, labInfo }: PeopleProps) {
                   )}
                 </div>
               </div>
-              <p className="text-sm text-gray-600 leading-relaxed mb-2">{person.topic}</p>
+              <p className="text-sm text-gray-600 leading-relaxed mb-3">{person.topic}</p>
               {person.notes && (
-                <p className="text-xs text-indigo-600 font-medium bg-indigo-50 px-2.5 py-1 rounded-lg">
+                <p className="text-xs text-indigo-600 font-medium bg-indigo-50 px-3 py-1.5 rounded-lg mb-2">
                   {person.notes}
                 </p>
               )}

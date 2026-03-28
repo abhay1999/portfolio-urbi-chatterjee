@@ -2,10 +2,11 @@ import type { Person } from "@/types";
 
 export const phdScholars: Person[] = [
   {
-    name: "Oswa Amro",
+    name: "Dr. Oswa Amro",
     role: "PhD Student",
     topic: "Acoustic Side Channel Attacks and Evaluation: A Study of Instruction Set Disassembly and Privacy Leakage Assessment on IoT Devices and Smart Phones",
     notes: "Thesis submitted May 2025",
+    image: "/images/profile/Oswa Amro.png",
   },
   {
     name: "Neelofar Hassan",
