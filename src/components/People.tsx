@@ -57,7 +57,7 @@ export function People({ phdScholars, mtechStudents, labInfo }: PeopleProps) {
               <div className="flex items-center gap-4 mb-4">
                 {person.image ? (
                   <img
-                    src={person.image}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${person.image}`}
                     alt={person.name}
                     className="w-16 h-16 rounded-xl object-cover shadow-sm flex-shrink-0"
                   />
