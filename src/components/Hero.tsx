@@ -1,13 +1,6 @@
 import { ProfileImage } from "./ProfileImage";
 import type { Profile } from "@/types";
 
-const stats = [
-  { value: "20+", label: "Publications" },
-  { value: "5", label: "PhD Students" },
-  { value: "15+", label: "Awards & Honors" },
-  { value: "2", label: "Tech Transfers" },
-];
-
 export function Hero({ profile }: { profile: Profile }) {
   return (
     <header className="relative text-white overflow-hidden" style={{ background: "linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f2044 100%)" }}>
@@ -117,18 +110,6 @@ export function Hero({ profile }: { profile: Profile }) {
           </div>
         </div>
 
-        {/* Stats strip */}
-        <div className="mt-14 border-t border-white/10 grid grid-cols-2 md:grid-cols-4">
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className="py-6 text-center border-r border-white/10 last:border-r-0 odd:border-b md:border-b-0 border-white/10"
-            >
-              <div className="text-3xl md:text-4xl font-bold text-white tracking-tight">{stat.value}</div>
-              <div className="text-xs text-gray-400 mt-1 uppercase tracking-widest">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </header>
   );
