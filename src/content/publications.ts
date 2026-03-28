@@ -14,6 +14,7 @@ export const journalPublications: Publication[] = [
     year: "2025",
     volume: "24(6)",
     pages: "1-29",
+    link: "https://dl.acm.org/doi/10.1145/3766894",
   },
   {
     authors: "Vishesh Mishra, Sparsh Mittal, Urbi Chatterjee",
@@ -42,6 +43,7 @@ export const journalPublications: Publication[] = [
     title: "CPU-Doctor: when a device's heartbeat can be an acoustic side-channel disassembler",
     venue: "Journal of Cryptographic Engineering",
     year: "2023",
+    link: "https://link.springer.com/article/10.1007/s13389-023-00327-z",
   },
   {
     authors: "K. Pratihar, U. Chatterjee, M. Alam, R. S. Chakraborty, D. Mukhopadhyay",
@@ -50,6 +52,7 @@ export const journalPublications: Publication[] = [
     year: "2023",
     volume: "72(6)",
     pages: "1636-1651",
+    link: "https://ieeexplore.ieee.org/document/9935279",
   },
   {
     authors: "Urbi Chatterjee, Debdeep Mukhopadhyay, Rajat Subhra Chakraborty",
@@ -103,18 +106,21 @@ export const conferencePublications: Publication[] = [
     title: "N-Tracer: A Trace Driven Attack on NoC-Based MPSoC Architecture",
     venue: "ACM ASIA CCS",
     year: "2025",
+    link: "https://dl.acm.org/doi/10.1145/3708821.3736201",
   },
   {
     authors: "Neelofar Hassan, Urbi Chatterjee",
     title: "Machine Learning Attacks on Challenge-Response Obfuscations in Strong PUFs",
     venue: "IEEE HOST",
     year: "2024",
+    link: "https://ieeexplore.ieee.org/document/10545395/",
   },
   {
     authors: "Navajit Singh Baban, Urbi Chatterjee, et al.",
     title: "Biochip-PUF: Physically Unclonable Functions for Microfluidic Biochips",
     venue: "International Test Conference (ITC)",
     year: "2023",
+    link: "https://doi.org/10.1109/ITC51656.2023.00033",
   },
   {
     authors: "Urbi Chatterjee, Rajat Sadhukhan, Debdeep Mukhopadhyay, Rajat Subhra Chakraborty",
@@ -128,11 +134,13 @@ export const conferencePublications: Publication[] = [
     title: "Trustworthy Proofs for Sensor Data using FPGA based Physically Unclonable Functions",
     venue: "Design Automation and Test in Europe (DATE)",
     year: "2018",
+    link: "https://ieeexplore.ieee.org/document/8342252/",
   },
   {
     authors: "Urbi Chatterjee, Rajat Subhra Chakraborty, Jimson Mathew, Dhiraj K. Pradhan",
     title: "Memristor based Arbiter PUF: Cryptanalysis Threat and its Mitigation",
     venue: "International Conference on VLSI Design (VLSID)",
     year: "2016",
+    link: "https://ieeexplore.ieee.org/document/7435009/",
   },
 ];

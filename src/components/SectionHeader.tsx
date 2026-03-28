@@ -5,11 +5,14 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ id, title }: SectionHeaderProps) {
   return (
-    <h2
-      id={id}
-      className="text-2xl font-bold text-[#1a1a2e] mb-6 border-b-2 border-[#b71c1c] pb-2 w-fit"
-    >
-      {title}
-    </h2>
+    <div className="mb-10">
+      <h2
+        id={id}
+        className="text-2xl md:text-3xl font-bold text-[#1a1a2e] tracking-tight"
+      >
+        {title}
+      </h2>
+      <div className="mt-2 h-1 w-12 rounded-full" style={{ background: "linear-gradient(to right, #4f46e5, #06b6d4)" }} />
+    </div>
   );
 }

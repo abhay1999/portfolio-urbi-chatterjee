@@ -36,7 +36,7 @@ export default function Home() {
       <main id="main">
         <Hero profile={profile} />
         <About profile={profile} />
-        <ResearchAreas profile={profile} />
+        <ResearchAreas />
         <News items={news} />
         <Teaching
           courses={profile.teaching}

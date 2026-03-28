@@ -17,6 +17,9 @@ export interface Profile {
   teaching: TeachingEntry[];
   newCourseIntroduced?: string;
   contact: Contact;
+  meetingLink?: string;
+  twitter?: string;
+  linkedin?: string;
 }
 
 export interface TeachingEntry {

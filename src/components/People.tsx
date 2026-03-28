@@ -6,30 +6,75 @@ interface PeopleProps {
   labInfo: { name: string; fullName: string; coIncharge: string };
 }
 
+const fellowshipColors: Record<string, string> = {
+  PMRF: "bg-amber-100 text-amber-700 border-amber-200",
+  TCS: "bg-blue-100 text-blue-700 border-blue-200",
+};
+
+function getInitials(name: string) {
+  return name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase();
+}
+
+const avatarGradients = [
+  "from-indigo-500 to-indigo-700",
+  "from-violet-500 to-violet-700",
+  "from-cyan-500 to-cyan-700",
+  "from-emerald-500 to-emerald-700",
+  "from-rose-500 to-rose-700",
+];
+
 export function People({ phdScholars, labInfo }: PeopleProps) {
   return (
     <section id="people" className="py-16 md:py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <SectionHeader id="people" title="People" />
-        <p className="text-gray-700 mb-6">
-          Lab: <strong>{labInfo.fullName} ({labInfo.name})</strong>. Co-Incharge:{" "}
-          {labInfo.coIncharge}.
-        </p>
-        <h3 className="font-semibold text-[#1a1a2e] mb-3">PhD Scholars</h3>
-        <ul className="space-y-4">
-          {phdScholars.map((p, i) => (
-            <li key={i} className="pl-4 border-l-2 border-gray-200">
-              <span className="font-semibold text-[#1a1a2e]">{p.name}</span>
-              {p.fellowship && (
-                <span className="text-sm text-[#b71c1c] ml-2">({p.fellowship})</span>
+
+        {/* Lab badge */}
+        <div className="inline-flex items-center gap-3 bg-[#1a1a2e] text-white px-5 py-3 rounded-2xl mb-10 shadow-lg">
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-black" style={{ background: "linear-gradient(135deg,#4f46e5,#06b6d4)" }}>
+            {labInfo.name[0]}
+          </div>
+          <div>
+            <p className="text-xs text-indigo-300 font-medium">{labInfo.name}</p>
+            <p className="text-sm font-semibold">{labInfo.fullName}</p>
+          </div>
+          <div className="h-8 w-px bg-white/20 mx-1" />
+          <div>
+            <p className="text-xs text-gray-400">Co-Incharge</p>
+            <p className="text-sm font-medium">{labInfo.coIncharge}</p>
+          </div>
+        </div>
+
+        {/* PhD Scholars grid */}
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-5">PhD Scholars</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {phdScholars.map((person, i) => (
+            <div
+              key={i}
+              className="group rounded-2xl border border-gray-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 p-5"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${avatarGradients[i % avatarGradients.length]} flex items-center justify-center text-white font-bold text-sm shadow-sm flex-shrink-0`}>
+                  {getInitials(person.name)}
+                </div>
+                <div className="min-w-0">
+                  <p className="font-semibold text-[#1a1a2e] leading-tight truncate">{person.name}</p>
+                  {person.fellowship && (
+                    <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full border mt-1 ${fellowshipColors[person.fellowship.split(" ")[0]] ?? "bg-gray-100 text-gray-600 border-gray-200"}`}>
+                      {person.fellowship}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed mb-2">{person.topic}</p>
+              {person.notes && (
+                <p className="text-xs text-indigo-600 font-medium bg-indigo-50 px-2.5 py-1 rounded-lg">
+                  {person.notes}
+                </p>
               )}
-              <p className="text-gray-700 text-sm mt-1">{p.topic}</p>
-              {p.notes && (
-                <p className="text-gray-500 text-sm mt-1">{p.notes}</p>
-              )}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
