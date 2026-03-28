@@ -1,8 +1,9 @@
-import type { Person } from "@/types";
+import type { Person, MtechStudent } from "@/types";
 import { SectionHeader } from "./SectionHeader";
 
 interface PeopleProps {
   phdScholars: Person[];
+  mtechStudents: MtechStudent[];
   labInfo: { name: string; fullName: string; coIncharge: string };
 }
 
@@ -23,7 +24,7 @@ const avatarGradients = [
   "from-rose-500 to-rose-700",
 ];
 
-export function People({ phdScholars, labInfo }: PeopleProps) {
+export function People({ phdScholars, mtechStudents, labInfo }: PeopleProps) {
   return (
     <section id="people" className="py-16 md:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-6">
@@ -101,6 +102,44 @@ export function People({ phdScholars, labInfo }: PeopleProps) {
               )}
             </div>
           ))}
+        </div>
+
+        {/* M.Tech Students table */}
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mt-14 mb-5">M.Tech Students</h3>
+        <div className="rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-[#1a1a2e] text-white">
+                <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider w-10">#</th>
+                <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Student Name</th>
+                <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Project Title</th>
+                <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">Solo / Joint Supervision</th>
+              </tr>
+            </thead>
+            <tbody>
+              {mtechStudents.map((s, i) => (
+                <tr
+                  key={s.sno}
+                  className={`border-t border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-indigo-50 transition-colors`}
+                >
+                  <td className="px-4 py-3 text-gray-400 font-medium">{s.sno}</td>
+                  <td className="px-4 py-3 font-medium text-[#1a1a2e] whitespace-nowrap">{s.name}</td>
+                  <td className="px-4 py-3 text-gray-600 leading-relaxed">{s.projectTitle}</td>
+                  <td className="px-4 py-3 whitespace-nowrap">
+                    {s.supervision === "Sole Supervision" ? (
+                      <span className="inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">
+                        Sole Supervision
+                      </span>
+                    ) : (
+                      <span className="inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-100">
+                        {s.supervision}
+                      </span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

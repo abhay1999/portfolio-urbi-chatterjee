@@ -22,7 +22,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   const profile = getProfile();
   const news = getNews();
-  const { phdScholars, labInfo } = getPeople();
+  const { phdScholars, mtechStudents, labInfo } = getPeople();
   const { journalPublications, conferencePublications } = getPublications();
   const honors = getHonors();
   const lab = getLab();
@@ -42,7 +42,7 @@ export default function Home() {
           courses={profile.teaching}
           newCourse={profile.newCourseIntroduced}
         />
-        <People phdScholars={phdScholars} labInfo={labInfo} />
+        <People phdScholars={phdScholars} mtechStudents={mtechStudents} labInfo={labInfo} />
         <Publications
           journals={journalPublications}
           conferences={conferencePublications}

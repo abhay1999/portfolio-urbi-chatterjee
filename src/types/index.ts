@@ -53,6 +53,13 @@ export interface Person {
   email?: string;
 }
 
+export interface MtechStudent {
+  sno: number;
+  name: string;
+  projectTitle: string;
+  supervision: string;
+}
+
 export interface Publication {
   authors: string;
   title: string;

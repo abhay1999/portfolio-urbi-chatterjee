@@ -1,4 +1,4 @@
-import type { Person } from "@/types";
+import type { Person, MtechStudent } from "@/types";
 
 export const phdScholars: Person[] = [
   {
@@ -41,6 +41,37 @@ export const phdScholars: Person[] = [
     topic: "Power Side Channel Attacks on Intel Processors",
     image: "/images/profile/Himanshu Pandey.jpeg",
   },
+];
+
+export const mtechStudents: MtechStudent[] = [
+  { sno: 1, name: "Hirak Mondal", projectTitle: "Security Evaluation of Authentication Protocols for Unmanned Air Vehicle Infrastructure", supervision: "Sole Supervision" },
+  { sno: 2, name: "Chandan Kumar", projectTitle: "Sorting Attacks Resilient Authentication Protocol for CMOS Image Sensor Based PUF – I", supervision: "Sole Supervision" },
+  { sno: 3, name: "Swapnil Gade", projectTitle: "Designing a Physically Unclonable Function Based Mutual Authentication Protocol for Keyless Automotive Entry System", supervision: "Sole Supervision" },
+  { sno: 4, name: "Pushpraj Naik", projectTitle: "Network Data Remanence Side-Channel Attack on SPREAD, H-SPREAD and Reverse AODV", supervision: "Sole Supervision" },
+  { sno: 5, name: "Anuj Shrivastava", projectTitle: "Lightweight Group Authentication Protocol for Swarm of Drones using SRAM PUF", supervision: "Sole Supervision" },
+  { sno: 6, name: "Manthan Kojage", projectTitle: "Machine Learning Attacks on Low-Cost Reconfigurable XRRO and XRBR PUF Designs", supervision: "Sole Supervision" },
+  { sno: 7, name: "Prajwal P. Thakare", projectTitle: "Secure Secret Sharing Protocol Against Network Data Remanence Side Channel Attacks", supervision: "Sole Supervision" },
+  { sno: 8, name: "Mayuresh Shandilya", projectTitle: "Design of Approximate Floating-Point Computing Format", supervision: "Sole Supervision" },
+  { sno: 9, name: "Deepak Kumar", projectTitle: "RStopper: Deception-Based Ransomware Detection", supervision: "Sole Supervision" },
+  { sno: 10, name: "Akash Panzade", projectTitle: "Vigilantly Watching Ransomware for Robust Trapping and Containment", supervision: "Sole Supervision" },
+  { sno: 11, name: "Abhishek Revskar", projectTitle: "Dual-Tone Multi-Frequency Assisted Acoustic Side Channel Attack to Retrieve Dialled Call Log", supervision: "Sole Supervision" },
+  { sno: 12, name: "Akash Shriwas", projectTitle: "Toolkit for Vulnerability Analysis and Penetration Testing – I", supervision: "Prof. Subhajit Roy" },
+  { sno: 13, name: "Lavkush Mani Tripathi", projectTitle: "Toolkit for Vulnerability Analysis and Penetration Testing – II", supervision: "Prof. Subhajit Roy" },
+  { sno: 14, name: "Aditya Sunilkumar Kankriya", projectTitle: "SRAM PUF-Based Secure Communication and Recognition in Drone Swarms", supervision: "Sole Supervision" },
+  { sno: 15, name: "Amit Kumar", projectTitle: "SAC Assisted Machine Learning Attacks on Feed Forward PUF Compositions", supervision: "Sole Supervision" },
+  { sno: 16, name: "Anurag Kamal", projectTitle: "Sorting Attacks Resilient Authentication Protocol for CMOS Image Sensor Based PUF – II", supervision: "Sole Supervision" },
+  { sno: 17, name: "Ashee Jain", projectTitle: "Acoustic Side Channel Attack on Virtual Keyboard on Smartphones", supervision: "Sole Supervision" },
+  { sno: 18, name: "Kapilkumar Kathiriya", projectTitle: "Security Protocol Analysis of Trezor Wallet", supervision: "Prof. Debapriya Basu Roy" },
+  { sno: 19, name: "Pratik Patil", projectTitle: "Developing Test Bed for Far-Field Side Channel Attack on Mixed Signal Chip", supervision: "Prof. Debapriya Basu Roy" },
+  { sno: 20, name: "Subhajit Panday", projectTitle: "Machine Learning Attacks on the WiSARD PUF", supervision: "Prof. Purushottam Kar" },
+  { sno: 21, name: "Shubhashish Moitra", projectTitle: "Integer Exfiltration via Hamming-Weight Measurements – II", supervision: "Prof. Purushottam Kar" },
+  { sno: 22, name: "K Vamsee Krishna", projectTitle: "Developing Test Bed for Screen Gleaning Attack on Smartphones for OTP Retrieval", supervision: "Prof. Debapriya Basu Roy" },
+  { sno: 23, name: "Kush Shah", projectTitle: "TEASE: A Leak-Resilient Protocol for Strong PUFs", supervision: "Prof. Purushottam Kar" },
+  { sno: 24, name: "Anshul Purohit", projectTitle: "Intelligent Method for Smart Platform Vulnerability Analysis and Penetration Testing – User Interface Design", supervision: "Prof. Subhajit Roy" },
+  { sno: 25, name: "Himanshu Karnatak", projectTitle: "Formal Verification and AI for Proof Assistant", supervision: "Prof. Indranil Saha" },
+  { sno: 26, name: "Pratibha Gupta", projectTitle: "Intelligent Method for Smart Platform Vulnerability Analysis and Penetration Testing – Building for AP", supervision: "Prof. Subhajit Roy" },
+  { sno: 27, name: "Ruby Prajapati", projectTitle: "Intelligent Method for Smart Platform Vulnerability Analysis and Penetration Testing – LLM-Based Report Generation", supervision: "Prof. Subhajit Roy" },
+  { sno: 28, name: "Abhinandan Singh Baghel", projectTitle: "Privacy Attacks on RAG-Enabled Fine-Tuning of Large Language Models", supervision: "Sole Supervision" },
 ];
 
 export const labInfo = {

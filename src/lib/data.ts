@@ -1,6 +1,6 @@
 import { profile } from "@/content/profile";
 import { news } from "@/content/news";
-import { phdScholars, labInfo } from "@/content/people";
+import { phdScholars, mtechStudents, labInfo } from "@/content/people";
 import {
   journalPublications,
   conferencePublications,
@@ -17,7 +17,7 @@ export function getNews() {
 }
 
 export function getPeople() {
-  return { phdScholars, labInfo };
+  return { phdScholars, mtechStudents, labInfo };
 }
 
 export function getPublications() {

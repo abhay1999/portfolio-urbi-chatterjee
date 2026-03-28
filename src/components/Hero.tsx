@@ -13,7 +13,7 @@ export function Hero({ profile }: { profile: Profile }) {
       <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600 rounded-full opacity-10 blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-cyan-500 rounded-full opacity-10 blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-      <div className="relative max-w-5xl mx-auto px-6 pt-16 md:pt-24 pb-0">
+      <div className="relative max-w-5xl mx-auto px-6 pt-16 md:pt-24 pb-16 md:pb-24">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
           {/* Photo column */}
           <div className="flex flex-col items-center gap-4 flex-shrink-0">
